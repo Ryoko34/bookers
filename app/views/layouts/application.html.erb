@@ -24,6 +24,11 @@
   </head>
 
   <body>
+    <main>
+      <div>
+        <%= flash[:notice] %>
+      </div>
+    </main>
     <%= yield %>
   </body>
 </html>

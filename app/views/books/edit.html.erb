@@ -1,4 +1,19 @@
 <h1>Editing Book</h1>
+<% if @book.errors.any? %>
+  <div class='error_box'>
+    <div class='error_box_header'>
+      <%= @book.errors.count %> errors prohibited this book from behind saved:
+    </div>
+    <div class='error_box_body'>
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
 <%= form_with model: @book do |f| %>
   <div>
     <%= f.label :title, 'Title' %><br>
@@ -12,6 +27,6 @@
 <% end %>
 
 <nav>
-  <div><%= link_to 'Show', book_path(@book.id) %></div>
+  <div><%= link_to 'Show', book_path(@book) %></div>
   <div><%= link_to 'Back', '/books' %></div>
 </nav>

@@ -8,3 +8,42 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+.error_box {
+  padding: 1px;
+  background-color: #ff0000;
+}
+
+.error_box_header {
+  padding: 2px;
+  background-color: #ffff00;
+}
+
+.error_box_body > ul {
+  font-size: 12px;
+}
+
+.error_box_body > li {
+  font-size: 12px;
+}
+
+.field {
+  background-color: orange;
+  margin-bottom: 10px;
+}
+
+.field_with_errors {
+  background-color: #ff0000;
+  padding: 2px;
+  display: table;
+}
+
