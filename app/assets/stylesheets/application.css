@@ -19,31 +19,53 @@ body {
 }
 
 .error_box {
+  width: 500px;
   padding: 1px;
   background-color: #ff0000;
+  margin-bottom: 10px;
 }
 
 .error_box_header {
+  width: 500px;
   padding: 2px;
-  background-color: #ffff00;
+  background-color: #cc0000;
+}
+
+.error_box_header > p {
+  color: #fff;
+}
+
+.error_box_body {
+  display: block;
+  padding: 15px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+  margin: 3px;
 }
 
 .error_box_body > ul {
-  font-size: 12px;
+  margin: 50px;
+  list-style: square;
 }
 
-.error_box_body > li {
-  font-size: 12px;
-}
-
-.field {
-  background-color: orange;
+.error_field {
+  width: 500px;
   margin-bottom: 10px;
 }
 
 .field_with_errors {
-  background-color: #ff0000;
-  padding: 2px;
   display: table;
 }
 
+.show_field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 30px;
+}
+
+.flash_message {
+  color: green;
+}

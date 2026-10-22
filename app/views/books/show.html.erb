@@ -1,7 +1,14 @@
-<h4>Title:</h4><p><%= @book.title %></p>
-<h4>Body:</h4><p><%= @book.body %></p>
+<div class='show_field'>
+  <h4>Title:</h4>
+  <p><%= @book.title %></p>
+</div>
+<div class='show_field'>
+  <h4>Body:</h4>
+  <p><%= @book.body %></p>
+</div>
 
 <nav>
-  <div><%= link_to 'Edit', edit_book_path(@book) %></div>
-  <div><%= link_to 'Back', '/books' %></div>
+  <a><%= link_to 'Edit', edit_book_path(@book) %></a>
+   | 
+  <a><%= link_to 'Back', '/books' %></a>
 </nav>
