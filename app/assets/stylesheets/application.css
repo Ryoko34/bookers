@@ -20,15 +20,15 @@ body {
 
 .error_box {
   width: 500px;
-  padding: 1px;
-  background-color: #ff0000;
   margin-bottom: 10px;
+  border: #ff0000 solid 3px;
 }
 
 .error_box_header {
-  width: 500px;
+  width: 494px;
   padding: 2px;
   background-color: #cc0000;
+  border-bottom: #ff0000 solid 3px;
 }
 
 .error_box_header > p {
@@ -40,7 +40,6 @@ body {
   padding: 15px;
   background-color: #f0f0f0;
   font-size: 12px;
-  margin: 3px;
 }
 
 .error_box_body > ul {
